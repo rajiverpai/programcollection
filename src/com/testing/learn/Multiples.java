@@ -24,11 +24,21 @@ public class Multiples {
 
 
     }
-
+    //Solution by @kavyashree
+    public static boolean isDividableMethod2(int num1, int num2){
+        while (num1>= num2){
+            num1 = num1 - num2;
+        }
+        if (num1 == 0){
+            return true;
+        }
+        return false;
+    }
 
 
     public static void main(String[] args){
-        isMultiple(78515,3);
+        isMultiple(12,3);
         isMultiple(2235553,2);
+        System.out.println(isDividableMethod2(12,3));
     }
 }
